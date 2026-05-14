@@ -1,0 +1,329 @@
+/*Css for Southern Gray Services website- Ryan Hodge 2026*/
+
+/*Variables for css*/
+:root{
+    --ff: "Holtwood One SC";
+    --primaryDark: #000; 
+    --primaryLight: white;
+    --primaryGray: #e2e1e7; 
+    --contrast1: rgb(31, 131, 237);
+    --contrast2: rgba(41, 132, 93, 0.527);
+}
+
+
+body{
+    margin-top: 0;
+    background-color: azure;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+main{
+    z-index: 0;
+}
+header{
+    margin-top: 0;
+}
+
+header h1{
+    font-family: var(--ff);
+    font-size: clamp(1.8rem, 10vw, 5rem);
+    font-weight: 400;
+    text-align: center;
+    color: var(--contrast1);
+    text-shadow: 5px 5px var(--contrast2);
+}
+
+/*Button CSS*/
+/* From Uiverse.io by gharsh11032000 */ 
+
+button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 7px;
+  font-size: 18px;
+  color: var(--contrast1);
+  border: 2px solid var(--contrast1);
+  border-radius: 34px;
+  background-color: transparent;
+  font-family: var(--ff);
+  font-weight: 400;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+  z-index: 0;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: var(--contrast2);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+button:hover::before {
+  scale: 3;
+}
+
+button:hover {
+  color:var(--primaryDark);
+  scale: 1.1;
+  box-shadow: 0 0px 20px var(--contrast2);
+  border-color: var(--contrast2);
+}
+
+button:active {
+  scale: 1;
+}
+
+
+
+
+/*Subheading code*/
+.subheading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.subheading h2{
+    font-size: 3vh;
+    font-weight: 350;
+    color: var(--contrast1);
+    font-family: var(--ff);
+    padding-right: 0;
+    margin-left: 10%;
+    margin-right: 0;
+}
+
+.subheading button{
+    align-items: center;
+    width: 25%;
+    margin-left: 3%;
+}
+
+
+/*Code for hero page*/
+.hero{
+    color: var(--primaryDark);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--contrast2);
+    box-shadow: 10px 10px var(--primaryGray);
+    border-radius: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    object-fit: cover;
+    align-content: baseline;
+    justify-content: center;
+}
+
+.hero img{
+    max-width: 500px;
+    max-height: 300px;
+    float: right;
+    padding-left: 8px;
+    margin-top: 80px;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+.heroText{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.heroText h3{
+    font-family: var(--ff);
+    font-size: 42px;
+    margin-left: 8px;
+}
+
+.heroText p{
+    font-family: var(--ff);
+    font-weight: 300;
+    font-size: 32px;
+    margin-left: 8px;
+}
+
+/*Coding for card boxes*/
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--primaryDark);
+    box-shadow: 8px 8px var(--primaryGray);
+    background-color: transparent;
+    border-color: var(--contrast2);
+    padding-right: 2%;
+}
+
+/*
+.card button{
+    margin: 0 auto;
+  margin-bottom: 5%;
+  width: 75%;
+} */
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
+
+.card h3{
+    font-family: var(--ff);
+    font-size: 24px;
+    margin-left: 8px;
+    font-weight: 350;
+}
+
+.card p{
+    font-family: var(--ff);
+    font-size: 18px;
+    font-weight: 275;
+    margin-left: 8px;
+    padding-bottom: 0;
+}
+
+
+/*Footer element*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2rem;
+    margin-right: 0;
+    background-color: aliceblue;
+    background-color: #e2e1e7;
+}
+
+footer :link{
+    text-decoration: none;
+    color: black;
+}
+
+footer :visited{
+    color: gray;
+}
+
+footer ul li :hover{
+    color: purple;
+}
+
+
+#footer1, #footerImage, #footer2{
+    width: 33.3%;
+}
+
+#footer1{
+    margin-left: 5%;
+}
+
+#footer1 ul{
+    list-style: none;
+}
+
+#footer1 ul li{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#footerImage img{
+   max-height: 200px;
+    
+}
+
+#footer2 ul{
+    list-style: none;
+}
+
+#footer2 ul li{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*Responsive design*/ 
+@media (max-width:768px){
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero img{
+        max-width: 100%;
+        margin-top: 20px;
+        margin-right: 0; 
+    }
+
+    .heroText h3{
+        font-size: clamp(1.2rem, 6vw, 2rem);
+    }
+
+    .heroText p{
+        font-size: clamp(1rem, 4vw, 1.8rem);
+    }
+
+    .button{
+        width: 95%; 
+        margin-bottom: 4px;
+        margin-left: 4px;
+        align-self: center;
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card{
+        width: 90%;
+        height: auto;
+    }
+
+    .subheading{
+        gap: 1.5rem;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer1, #footerImage, #footer2{
+        width: 100%;
+        text-align: center;
+    }
+}
