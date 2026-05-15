@@ -243,8 +243,8 @@ footer ul li :hover{
 }
 
 
-#footer1, #footerImage, #footer2{
-    width: 33.3%;
+#footer1, #footerImage{
+    width: 50%;
 }
 
 #footer1{
@@ -265,14 +265,6 @@ footer ul li :hover{
     
 }
 
-#footer2 ul{
-    list-style: none;
-}
-
-#footer2 ul li{
-    text-decoration: none;
-    font-size: 18px;
-}
 
 /*Responsive design*/ 
 @media (max-width:768px){
@@ -322,7 +314,7 @@ footer ul li :hover{
         align-items: center;
     }
 
-    #footer1, #footerImage, #footer2{
+    #footer1, #footerImage{
         width: 100%;
         text-align: center;
     }
